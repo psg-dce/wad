@@ -1,0 +1,10 @@
+create database goku; use goku;
+CREATE TABLE goku( id varchar(10),
+name varchar(20)
+);
+INSERT INTO goku VALUES ('21dx05', 'gokul'); 
+INSERT INTO goku VALUES ('21dx0', 'goku'); 
+INSERT INTO goku VALUES ('21dx', 'gok'); 
+INSERT INTO goku VALUES ('21d', 'go'); 
+INSERT INTO goku VALUES ('21', 'g');
+SELECT * FROM goku

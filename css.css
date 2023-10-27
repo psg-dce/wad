@@ -1,0 +1,6 @@
+.body {
+  font-style: italic;
+  border: 1px dotted blue;
+  text-decoration: underline;
+  font-weight: 900;
+}

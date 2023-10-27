@@ -1,0 +1,13 @@
+create database ex;
+use ex;
+create table ex(
+name varchar(50),
+id varchar(20)
+);
+insert into ex values('ex','21dx05');
+insert into ex values('rahul','21dx16');
+insert into ex values('ex','21dx005');
+insert into ex values('rahul','21dx16');
+insert into ex values('ex','21dx05');
+insert into ex values('gokul','gokul');
+select * from ex;

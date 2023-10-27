@@ -1,0 +1,24 @@
+<?xml-stylesheet type="text/css" href="xml.css"?>
+<students>
+<student>
+<roll_no>05</roll_no>
+<name>Gokul</name>
+<dept>dce</dept>
+<year>2021</year>
+<mail>21dx05@gmail.com</mail>
+</student>
+<student>
+<roll_no>05</roll_no>
+<name>Gokul</name>
+<dept>dce</dept>
+<year>2021</year>
+<mail>21dx05@gmail.com</mail>
+</student>
+<student>
+<roll_no>05</roll_no>
+<name>Gokul</name>
+<dept>dce</dept>
+<year>2021</year>
+<mail>21dx05@gmail.com</mail>
+</student>
+</students>

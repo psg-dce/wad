@@ -1,0 +1,13 @@
+student {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+}
+roll_no,
+name,
+dept,
+year,
+mail {
+  display: block;
+}

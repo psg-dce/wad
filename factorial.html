@@ -1,0 +1,16 @@
+<body style="text-align: center; margin-top: 10cm; background-color: gray">
+  <h1>Factorial of given number</h1>
+  <input id="num" type="text" />
+  <button onclick="fact()">Submit</button>
+  <script>
+    function fact() {
+      var num = parseInt(document.getElementById('num').value);
+      var i = 1,
+        fact = 1;
+      for (; i <= num; i++) {
+        fact = fact * i;
+      }
+      window.alert('Factorial of ' + num + ' is ' + fact);
+    }
+  </script>
+</body>

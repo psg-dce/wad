@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS Book List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-controller="BookController">
+      <h1>Book List</h1>
+      <input
+        type="text"
+        ng-model="authorFilter"
+        placeholder="Filter by Author"
+      />
+      <ul>
+        <li ng-repeat="book in books | filter: authorFilter">
+          <strong>Title:</strong> {{ book.title }}<br />
+          <strong>Author:</strong> {{ book.author }}<br />
+          <strong>Publication Year:</strong> {{ book.year }}<br /><br />
+        </li>
+      </ul>
+    </div>
+    <script>
+      var app = angular.module('myApp', []);
+      app.controller('BookController', function ($scope) {
+        $scope.books = [
+          { title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+          { title: '1984', author: 'George Orwell', year: 1949 },
+          { title: 'Pride and Prejudice', author: 'Jane Austen', year: 1813 },
+          {
+            title: 'The Great Gatsby',
+            author: 'F. Scott Fitzgerald',
+            year: 1925,
+          },
+          {
+            title: 'The Catcher in the Rye',
+            author: 'J.D. Salinger',
+            year: 1951,
+          },
+        ];
+        $scope.authorFilter = '';
+      });
+    </script>
+  </body>
+</html>

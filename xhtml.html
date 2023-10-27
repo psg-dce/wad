@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <h1>Enter Your ROLL NO</h1>
+  <form id="form">
+    Roll no:
+    <input type="text" id="rollNo" name="rollNo" required />
+    <input type="submit" value="Submit" />
+  </form>
+  <script>
+    document.getElementById('form').onsubmit = function (event) {
+      event.preventDefault();
+      const rollNoPattern = /\d{2}[A-Z]{2}\d{2}/;
+      const rollNoInput = document.getElementById('rollNo').value;
+      if (rollNoPattern.test(rollNoInput)) {
+        alert('Valid ROLL NO: ' + rollNoInput);
+      } else {
+        alert(
+          'Invalid ROLL NO format! Please use the format: 00AA00 (e.g., 21DX05).'
+        );
+      }
+    };
+  </script>
+</html>
